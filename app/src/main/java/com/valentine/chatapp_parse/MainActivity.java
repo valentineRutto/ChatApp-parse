@@ -1,9 +1,11 @@
 package com.valentine.chatapp_parse;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.parse.Parse;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -12,6 +14,7 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Parse.initialize(this, "24NWbvJI97KznPJgWUKtDkEB7fRyYLo3CDwcUQ61", "FEFq2urIY7ODDGrm1aotjle2QYACMB2hKkK14O5P");
     }
 
     @Override
